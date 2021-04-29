@@ -8,6 +8,6 @@ if __name__ == "__main__":
     elif agc == 2:
         print("{:d} argument:".format(agc - 1))
     else:
-        print("{:d} arguments:".format(agc -1))
+        print("{:d} arguments:".format(agc - 1))
     for ind in range(1, agc):
         print("{:d}: {:s}".format(ind, agv[ind]))
