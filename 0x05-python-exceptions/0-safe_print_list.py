@@ -1,11 +1,12 @@
 #!/usr/bin/pyhton3
 def safe_print_list(my_list=[], x=0):
-    y = 0
-    while y < x:
+    numprint = 0
+    for element in range(0, x):
         try:
-            print("{}".format(my_list[y]), end="")
-            y += 1
+            print(my_list[element], end="")
         except:
             break
-        print("")
-        return 1
+        numprint = (numprint + 1)
+
+    print()
+    return numprint
