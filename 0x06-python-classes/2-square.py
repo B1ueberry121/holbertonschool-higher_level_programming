@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-'''This module defines an object class called Square'''
+'''This module contains the Square class'''
 
 
 class Square:
-    '''This class contains a size attribute'''
+    '''This class defines the Square'''
     def __init__(self, size=0):
         '''This methods creates a new instance of square'''
         if type(size) is int:
