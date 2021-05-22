@@ -1,0 +1,52 @@
+	Import
+	>>> f = __import__('3-say_my_name').say_my_name
+
+---------------------------
+Test 1:
+
+	>>> f("Naruto", "Uzumaki")
+	My name is Naruto Uzumaki
+
+---------------------------
+Test 2:
+
+	>>> f("Naruto")
+	My name is Naruto 
+
+---------------------------
+Test 3:
+
+	>>> f(100)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+---------------------------
+Test 4:
+
+	>>> f("Naruto", 100)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+----------------------------
+Test 5:
+
+	>>> f("")
+	My name is  
+
+----------------------------
+Test 6:
+
+	>>> f(["Hola"], 10)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+----------------------------
+Test 7:
+
+	>>> f()
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'

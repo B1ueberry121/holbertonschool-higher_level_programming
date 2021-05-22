@@ -1,0 +1,107 @@
+	Import
+	>>> f = __import__('2-matrix_divided').matrix_divided
+
+-----------------------
+Test 1:
+
+>>> f(None, 1)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/float
+
+-----------------------
+Test 2:
+
+	>>> m = [
+	...  [1, 2.5, 3],
+	...  [4, "Hey", 6]
+	... ]
+	>>> f(m, 1)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/float
+
+-----------------------
+Test 3:
+
+	>>> m = [
+	...  [1, 2.5, 3],
+	...  [4, 6.5, 6],
+	...  [None, 8, 9]
+	... ]
+	>>> f(m, 1)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/float
+
+-----------------------
+Test 4:
+
+	>>> m = [
+	...  [1, 2.5, 3],
+	...  [4, 6.5, 6],
+	...  [-5, 8, 9, 100]
+	... ]
+	>>> f(m, -5)
+	Traceback (most recent call last):
+	...
+	TypeError: Each row of the matrix must have the same size
+
+-----------------------
+Test 5:
+
+	>>> m = [
+	...  [1, 2.5, 3],
+	...  [4, -100.5, 6],
+	... ]
+	>>> f(m, None)
+	Traceback (most recent call last):
+	...
+	TypeError: div must be a number
+
+-----------------------
+Test 6:
+
+	>>> m = [
+	...  [1, 2.5, 3],
+	...  [4, -100.5, 6],
+	... ]
+	>>> f(m, 0)
+	Traceback (most recent call last):
+	...
+	ZeroDivisionError: division by zero
+
+-----------------------
+Test 7:
+
+	>>> m = [
+	...  [1, 2.5, 3],
+	...  [4, -100.5, 6],
+	... ]
+	>>> f(m, 0.0)
+	Traceback (most recent call last):
+	...
+	ZeroDivisionError: division by zero
+
+-----------------------
+Test 8:
+
+	Matrix has no elements
+	>>> f([[]], 1)
+	[[]]
+
+-----------------------
+Test 9:
+
+	>>> f([[15, 16]])
+	Traceback (most recent call last):
+	...
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+------------------------
+Test 10:
+
+	>>> f()
+	Traceback (most recent call last):
+	...
+	TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
