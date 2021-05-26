@@ -4,14 +4,14 @@
 ---------------------------
 Test 1:
 
-	>>> f("Naruto", "Uzumaki")
-	My name is Naruto Uzumaki
+	>>> f("Kirito", "Kirigaya")
+	My name is Kirito Kirigaya
 
 ---------------------------
 Test 2:
 
-	>>> f("Naruto")
-	My name is Naruto 
+	>>> f("Kazuto")
+	My name is Kazuto 
 
 ---------------------------
 Test 3:
