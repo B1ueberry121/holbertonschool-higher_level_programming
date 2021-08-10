@@ -6,6 +6,7 @@ from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
+
 class State(Base):
     ''' Represents the table states from db "hbtn_0e_4_usa" '''
     __tablename__ = 'states'
