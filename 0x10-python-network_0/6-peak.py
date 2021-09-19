@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-''' Defines a function to the Peak '''
+""" Defines a function to the Peak """
 
 
 def find_peak(list_of_integers):
-    ''' Finds a peak in a list of integers
+    """ Finds a peak in a list of integers
     Args:
         list_of_integers (list): a list of integers
     Return:
         int or None
-    '''
+    """
     if type(list_of_integers) is not list:
         return None
     length = len(list_of_integers)
@@ -26,4 +26,4 @@ def find_peak(list_of_integers):
            list_of_integers[idx] > list_of_integers[idx + 1]):
             return list_of_integers[idx]
 
-    return list_of_integers[0]n
+    return list_of_integers[0]
