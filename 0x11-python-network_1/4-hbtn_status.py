@@ -4,8 +4,8 @@ import requests
 
 
 if __name__ == "__main__":
-    """Only executes as main """
-    r = request.get("https://intranet.hbtn.io/status")
+    """ Only executes as main """
+    r = requests.get("https://intranet.hbtn.io/status")
     print("Body response:")
     print("\t- type: {}".format(type(r.text)))
     print("\t- content: {}".format(r.text))
