@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """ Sends a POST request to a URL with a letter as parameter """
 import requests
 import sys
