@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Changes the name of a State object from the db '''
+'''Changes the name of a State object from the db'''
 
 import sys
 from model_state import Base, State

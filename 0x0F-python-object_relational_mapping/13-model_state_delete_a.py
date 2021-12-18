@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-''' Deletes all State objects with a name \
-        containing the letter a from the db '''
+'''Deletes all State objects with a name \
+        containing the letter a from the db'''
 
 import sys
 from model_state import Base, State

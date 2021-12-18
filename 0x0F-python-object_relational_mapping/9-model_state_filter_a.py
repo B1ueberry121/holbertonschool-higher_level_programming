@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Lists all State objects that contain the letter "a" from the db '''
+'''Lists all State objects that contain the letter "a" from the db'''
 
 import sys
 from model_state import Base, State
