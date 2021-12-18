@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Contains the City class '''
+'''Contains the City class'''
 
 from model_state import State, Base
 from sqlalchemy import ForeignKey, Column, String, Integer
