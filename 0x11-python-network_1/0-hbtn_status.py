@@ -5,9 +5,9 @@ if __name__ == '__main__':
     url = urllib.request.Request('https://intranet.hbtn.io/status')
     with urllib.request.urlopen(url) as response:
         html = response.read()
-        print("""Boddy response:
+        print("""Body response:
         - type: {}
-        - constent {}
+        - content: {}
         - utf8 content: {}""".format(
             type(html), html,
             html.decode('utf8')))
