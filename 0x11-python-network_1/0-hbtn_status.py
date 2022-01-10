@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+''' fetches a url with urllib and prints it '''
+import urllib.request
+if __name__ == '__main__':
+    url = urllib.request.Request('https://intranet.hbtn.io/status')
+    with urllib.request.urlopen(url) as response:
+        html = response.read()
+        print("""Boddy response:
+        - type: {}
+        - constent {}
+        - utf8 content: {}""".format(
+            type(html), html,
+            html.decode('utf8')))
