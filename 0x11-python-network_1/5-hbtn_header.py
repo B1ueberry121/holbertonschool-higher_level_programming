@@ -9,6 +9,6 @@ if __name__ = '__main__':
     url = sys.ardv[1]
     req = requests.get(url)
     try:
-        print(r.headers['X-Request-Id'])
+        print(req.headers['X-Request-Id'])
     except:
         print(None)
