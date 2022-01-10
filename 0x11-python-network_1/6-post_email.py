@@ -6,8 +6,10 @@ and finally displays the body of the response.
 '''
 import requests
 import sys
-if __name__ = '__main__':
+if __name__ == '__main__':
     url = sys.argv[1]
     email = {"email": sys.argv[2]}
     req = requests.post(url, email)
     print(req.text)
+
+
